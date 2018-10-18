@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light my_nav mb-5">
+  <a class="navbar-brand" href="/">{{ company  }}</a>
+  <div class="navbar-expand mr-auto "><div class="navbar-nav"></div></div>
+  <div class="navbar-expand mr-auto "><div class="navbar-nav"></div></div>
+  <div class="navbar-expand mr-auto ">
+    <div class="navbar-nav">
+      <a *ngFor="let entry of menu; let i = index" class="nav-item nav-link active" routerLink="{{entry.url}}" href="#">{{ entry.text }}</a>
+    </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="https://facebook.com/" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://twitter.com/" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://instagram.com" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </div>
+    </div>
+    <div class="navbar-expand ml-auto navbar-nav">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="javascript:function disabler() { return false; }">
+          <i class="fa fa-flag"></i>{{ translateLink }}
+        </a>
+      </div>
+  </div>
+</nav>

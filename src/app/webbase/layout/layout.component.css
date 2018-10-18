@@ -1,0 +1,6 @@
+.container {
+    min-height:100% !important;
+}
+.toVerticallyCenter {
+    align-items: center!important;
+}
