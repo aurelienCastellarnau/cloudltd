@@ -1,0 +1,184 @@
+{
+    "origin": {
+        "wallpaper-source": "http://www.desktop-screens.com/white-blue-wallpapers.html",
+        "background": "assets/tryback.jpg",
+        "background_layout": "",
+        "header": {
+            "company": "cloudltd",
+            "translateLink": "Chinese",
+            "menu": [
+                { "text": "Accueil", "url": "/welcome" },
+                { "text": "Services", "url": "/services" },
+                { "text": "Contact", "url": "/contact"}
+            ]
+        },
+        "carousel": {
+            "images": [
+                "assets/back.jpg",
+                "assets/computer.jpg",
+                "assets/world.jpg",
+                "assets/proc.jpg"
+            ]
+        },
+        "tile": {
+            "savoirfaire": {
+                "title": "Notre savoir faire",
+                "tiles": [
+                    {
+                        "image": "assets/back.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/diagnostic.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/keyboard.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/computerline.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/networking.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/tunnel.jpg",
+                        "text": "Add your text here..."
+                    }
+                ]
+            },
+            "actu": {
+                "title": "Actualités...",
+                "tiles": [
+                    {
+                        "image": "assets/back.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/diagnostic.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/keyboard.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/computerline.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/networking.jpg",
+                        "text": "Add your text here..."
+                    },
+                    {
+                        "image": "assets/tunnel.jpg",
+                        "text": "Add your text here..."
+                    }
+                ]
+            }
+        },
+        "contact": {
+            "title": "Contactez nous",
+            "nameError": "Champ requis",
+            "emailError": "Champ requis",
+            "emailFormatError": "Le format de cet email n'est pas valide",
+            "messageError": "Champ requis",
+            "messageLengthError": "6 lettres au minimum",
+            "submit": "Envoyer"
+        }
+    },
+    "chinese": {
+        "wallpaper-source": "http://www.desktop-screens.com/white-blue-wallpapers.html",
+        "background": "assets/tryback.jpg",
+        "background_layout": "",
+        "header": {
+            "company": "马艾",
+            "translateLink": "Français",
+            "menu": [
+                { "text": "马艾娜哦", "url": "/welcome" },
+                { "text": "诶比娜哦", "url": "/services" },
+                { "text": "诶比西迪", "url": "/contact"}
+        ]
+        },
+        "carousel": {
+            "images": [
+            "assets/back.jpg",
+            "assets/computer.jpg",
+            "assets/world.jpg",
+            "assets/proc.jpg"
+            ]
+        },
+        "tile": {
+            "savoirfaire": {
+            "title": "诶比西艾勒艾马艾娜哦",
+            "tiles": [
+                {
+                    "image": "assets/back.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/diagnostic.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/keyboard.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/computerline.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/networking.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/tunnel.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                }
+            ]
+            },
+            "actu": {
+            "title": "诶伊马艾哦...",
+            "tiles": [
+                {
+                    "image": "assets/back.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/diagnostic.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/keyboard.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/computerline.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/networking.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                },
+                {
+                    "image": "assets/tunnel.jpg",
+                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
+                }
+            ]
+            }
+        },
+        "contact": {
+            "title": "诶哦",
+            "nameError": "诶哦",
+            "emailError": "诶哦",
+            "emailFormatError": "诶哦",
+            "messageError": "诶哦",
+            "messageLenghtError": "诶哦",
+            "submit": "Envoyer"
+        }
+    }
+}
