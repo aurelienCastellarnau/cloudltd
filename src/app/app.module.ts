@@ -8,6 +8,7 @@ import { WebbaseModule } from './webbase/webbase.module';
 import { AppRoutingModule } from './app-routing.module';
 import { WelcomeModule } from './welcome/welcome.module';
 import { ContactModule } from './contact/contact.module';
+import { ServpageModule } from './servpage/servpage.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ContactModule } from './contact/contact.module';
     AppRoutingModule,
     WelcomeModule,
     ContactModule,
+    ServpageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

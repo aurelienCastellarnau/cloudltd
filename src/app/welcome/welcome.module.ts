@@ -6,13 +6,14 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CarousselComponent } from './caroussel/caroussel.component';
 import { TileComponent } from './tile/tile.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   imports: [
     CommonModule,
     SlideshowModule,
   ],
-  declarations: [WelcomeComponent, CarousselComponent, TileComponent],
+  declarations: [WelcomeComponent, CarousselComponent, TileComponent, IntroComponent],
   exports: [WelcomeComponent]
 })
 export class WelcomeModule { }

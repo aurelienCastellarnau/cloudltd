@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as data from 'template/data.json';
 
 @Component({
@@ -7,10 +7,13 @@ import * as data from 'template/data.json';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
-  background = (<any>data).origin.background_layout;
+  @Input() language;
+  background: string;
   constructor() { }
 
   ngOnInit() {
+    this.background = this.language === 'chinese' ?
+      (<any>data).chinese.background_layout : (<any>data).english.background_layout ;
   }
 
   getBg() {

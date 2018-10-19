@@ -1,0 +1,6 @@
+<h3>{{ partnersintro }}</h3>
+<div *ngFor="let path of partners; let i = index" class="col-md-2">
+  <div class="card bg-light" style="max-width: &àrem; max-height: 25rem; margin:1rem;">
+    <a href="#" routerLink="/service"><img class="card-img-top" src="{{ path.url }}" style="max-height: 10rem;" alt="{{ path.key }}"></a>
+  </div>
+</div>

@@ -1,116 +1,64 @@
 {
-    "origin": {
+    "english": {
         "wallpaper-source": "http://www.desktop-screens.com/white-blue-wallpapers.html",
-        "background": "assets/tryback.jpg",
-        "background_layout": "",
+        "background": "assets/tryback3_big.jpg",
+        "background_layout": "assets/tryback.jpg",
+        "logo": "assets/logo.png",
         "header": {
             "company": "cloudltd",
-            "translateLink": "Chinese",
+            "translateLink": "中文",
             "menu": [
-                { "text": "Accueil", "url": "/welcome" },
-                { "text": "Services", "url": "/services" },
+                { "text": "Home", "url": "/welcome" },
+                { "text": "Services", "url": "/service" },
                 { "text": "Contact", "url": "/contact"}
             ]
         },
-        "carousel": {
-            "images": [
-                "assets/back.jpg",
-                "assets/computer.jpg",
-                "assets/world.jpg",
-                "assets/proc.jpg"
-            ]
-        },
+        "carousel": "assets/banner_hardware.jpg",
         "tile": {
             "savoirfaire": {
-                "title": "Notre savoir faire",
+                "title": "Our services",
                 "tiles": [
                     {
                         "image": "assets/back.jpg",
-                        "text": "Add your text here..."
+                        "text": "High performance computing"
                     },
                     {
                         "image": "assets/diagnostic.jpg",
-                        "text": "Add your text here..."
+                        "text": "Information security"
                     },
                     {
                         "image": "assets/keyboard.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/computerline.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/networking.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/tunnel.jpg",
-                        "text": "Add your text here..."
-                    }
-                ]
-            },
-            "actu": {
-                "title": "Actualités...",
-                "tiles": [
-                    {
-                        "image": "assets/back.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/diagnostic.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/keyboard.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/computerline.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/networking.jpg",
-                        "text": "Add your text here..."
-                    },
-                    {
-                        "image": "assets/tunnel.jpg",
-                        "text": "Add your text here..."
+                        "text": "Internet and email security"
                     }
                 ]
             }
         },
         "contact": {
-            "title": "Contactez nous",
-            "nameError": "Champ requis",
-            "emailError": "Champ requis",
-            "emailFormatError": "Le format de cet email n'est pas valide",
-            "messageError": "Champ requis",
-            "messageLengthError": "6 lettres au minimum",
-            "submit": "Envoyer"
+            "title": "Contact us",
+            "nameError": "Required",
+            "emailError": "Required",
+            "emailFormatError": "Bad email format",
+            "messageError": "Required",
+            "messageLengthError": "6 letters minimum",
+            "submit": "Send"
         }
     },
     "chinese": {
         "wallpaper-source": "http://www.desktop-screens.com/white-blue-wallpapers.html",
-        "background": "assets/tryback.jpg",
-        "background_layout": "",
+        "background": "assets/tryback3_big.jpg",
+        "background_layout": "assets/tryback.jpg",
+        "logo": "assets/logo.png",
         "header": {
             "company": "马艾",
-            "translateLink": "Français",
+            "translateLink": "English",
             "menu": [
-                { "text": "马艾娜哦", "url": "/welcome" },
-                { "text": "诶比娜哦", "url": "/services" },
-                { "text": "诶比西迪", "url": "/contact"}
+                { "text": "主页", "url": "/welcome" },
+                { "text": "服务", "url": "/services" },
+                { "text": "联系我们", "url": "/contact"}
         ]
         },
-        "carousel": {
-            "images": [
-            "assets/back.jpg",
-            "assets/computer.jpg",
-            "assets/world.jpg",
-            "assets/proc.jpg"
-            ]
-        },
+        "carousel": "assets/banner_hardware_ch.jpg",
+        "信息学专门知识, 24/7": "Your IT expertise 24/7",
         "tile": {
             "savoirfaire": {
             "title": "诶比西艾勒艾马艾娜哦",
@@ -125,18 +73,6 @@
                 },
                 {
                     "image": "assets/keyboard.jpg",
-                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
-                },
-                {
-                    "image": "assets/computerline.jpg",
-                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
-                },
-                {
-                    "image": "assets/networking.jpg",
-                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
-                },
-                {
-                    "image": "assets/tunnel.jpg",
                     "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
                 }
             ]
@@ -155,18 +91,6 @@
                 {
                     "image": "assets/keyboard.jpg",
                     "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
-                },
-                {
-                    "image": "assets/computerline.jpg",
-                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
-                },
-                {
-                    "image": "assets/networking.jpg",
-                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
-                },
-                {
-                    "image": "assets/tunnel.jpg",
-                    "text": "诶比西迪伊艾弗吉艾尺艾杰开艾勒艾马艾娜哦"
                 }
             ]
             }
@@ -180,5 +104,22 @@
             "messageLenghtError": "诶哦",
             "submit": "Envoyer"
         }
-    }
+    },
+    "partners": [
+        {"key": "sonicwall", "url": "assets/partners/sonicwall.jpg" },
+        {"key": "netapp", "url": "assets/partners/netapp.png" },
+        {"key": "cisco", "url": "assets/partners/cisco.png" },
+        {"key": "citrix", "url": "assets/partners/citrix.png" },
+        {"key": "nutanix", "url": "assets/partners/nutanix.png" },
+        {"key": "paloalto", "url": "assets/partners/paloalto.png" },
+        {"key": "datacore", "url": "assets/partners/datacore.png" },
+        {"key": "dell", "url": "assets/partners/dell.png" },
+        {"key": "supermicro", "url": "assets/partners/supermicro.png" },
+        {"key": "fortinet", "url": "assets/partners/fortinet.png" },
+        {"key": "veeam", "url": "assets/partners/veeam.png" },
+        {"key": "lenovo", "url": "assets/partners/lenovo.png" },
+        {"key": "macaffee", "url": "assets/partners/macafee.png" },
+        {"key": "vmWare", "url": "assets/partners/vmWare.png" }
+    ],
+    "partnersintro": "Working with"
 }

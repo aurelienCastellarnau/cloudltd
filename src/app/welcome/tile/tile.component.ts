@@ -16,10 +16,7 @@ export class TileComponent implements OnInit {
   ngOnInit() {
     switch (this.type) {
       case 'savoirfaire':
-        this.tile = (<any>data).origin.tile.savoirfaire;
-        break;
-      case 'actu':
-        this.tile = (<any>data).origin.tile.actu;
+        this.tile = (<any>data).english.tile.savoirfaire;
         break;
     }
     this.tiles = this.tile.tiles;

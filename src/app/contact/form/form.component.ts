@@ -10,7 +10,7 @@ import * as data from 'template/data.json';
 export class FormComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
-  contact = (<any>data).origin.contact;
+  contact = (<any>data).english.contact;
   title = this.contact.title;
   nameError = this.contact.nameError;
   emailError = this.contact.emailError;

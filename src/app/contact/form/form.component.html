@@ -1,35 +1,37 @@
-<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<div class="row">
+  <div class="col-lg">
+    <form class="text-center p-3" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-  <p class="h4 mb-4">{{ title }}</p>
+      <p class="h4 mb-4">{{ title }}</p>
 
-  <!-- Name -->
-  <input type="text" formControlName="name" id="contactFormName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
-    placeholder="Name">
-  <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
-    <div *ngIf="f.name.errors.required">{{ nameError }}</div>
+      <!-- Name -->
+      <input type="text" formControlName="name" id="contactFormName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
+        placeholder="Name">
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">{{ nameError }}</div>
+      </div>
+
+
+      <!-- Email -->
+      <input type="email" formControlName="email" id="contactFormEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+        placeholder="E-mail">
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">{{ emailError }}</div>
+        <div *ngIf="f.name.errors.email">{{ emailFormatError }}</div>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <textarea formControlName="message" class="form-control rounded" id="contactFormMessage" rows="3" placeholder="Message"></textarea>
+      </div>
+      <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+        <div *ngIf="f.message.errors.required">{{ messageError }}</div>
+        <div *ngIf="f.message.errors.length">{{ messageLengthError }}</div>
+      </div>
+
+      <!-- Send button -->
+      <button class="btn btn-success" type="submit" [disabled]="disabledSubmitButton">{{ submit }}</button>
+
+    </form>
   </div>
-
-
-  <!-- Email -->
-  <input type="email" formControlName="email" id="contactFormEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
-    placeholder="E-mail">
-  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-    <div *ngIf="f.name.errors.required">{{ emailError }}</div>
-    <div *ngIf="f.name.errors.email">{{ emailFormatError }}</div>
-  </div>
-
-  <!-- Message -->
-  <div class="form-group">
-    <textarea formControlName="message" class="form-control rounded" id="contactFormMessage"
-      rows="3" placeholder="Message"></textarea>
-  </div>
-  <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-    <div *ngIf="f.message.errors.required">{{ messageError }}</div>
-    <div *ngIf="f.message.errors.length">{{ messageLengthError }}</div>
-  </div>
-
-  <!-- Send button -->
-  <button class="btn btn-success" type="submit"
-    [disabled]="disabledSubmitButton">{{ submit }}</button>
-
-</form>
+</div>
