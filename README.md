@@ -5,9 +5,6 @@
 # Démarrage
 Si nécessaire, installer git pour récupérer le projet: [windows](https://gitforwindows.org/)/[autre](https://git-scm.com/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git)
 
-
-
-
 ## Installer les prérequis
 
 

@@ -10,32 +10,37 @@ import * as data from 'template/data.json';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   subscription: Subscription;
+  language: string;
   template = (<any>data).english.header;
-  company = this.template.company;
-  logo = this.template.logo;
-  translateLink = this.template.translateLink;
-  menu = this.template.menu;
+  logo: string;
+  translateLink: string;
+  menu: any;
   constructor(private translationService: TranslationService) {
-    const self = this;
     this.subscription = this.translationService.getLanguage().subscribe(language => {
-      console.log('language: ', language);
-      if (language.text === '中文') {
-        self.template = (<any>data).chinese.header;
-      } else if (language.text === 'English') {
-        self.template = (<any>data).english.header;
-      }
-      this.translateLink = self.template.translateLink;
-      this.menu = self.template.menu;
+      this.language = language.text;
+      this.defineTemplate();
     });
+  }
+  ngOnInit() {
+    this.language = this.translationService.getState().actual;
+    this.defineTemplate();
   }
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-
-
-  ngOnInit() {
+  defineTemplate() {
+    if (this.language === this.translationService.getState().ch) {
+      this.template = (<any>data).chinese.header;
+    } else if (this.language === this.translationService.getState().en) {
+      this.template = (<any>data).english.header;
+    }
+    this.logo = this.template.logo;
+    this.translateLink = this.template.translateLink;
+    this.menu = this.template.menu;
+    console.log('logo: ', this.logo);
   }
-  translate(event, item) {
+  // switch language
+  translate() {
     this.translationService.sendLanguage(this.translateLink);
   }
 }

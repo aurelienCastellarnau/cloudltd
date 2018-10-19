@@ -6,7 +6,7 @@
 
       <!-- Name -->
       <input type="text" formControlName="name" id="contactFormName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
-        placeholder="Name">
+        placeholder="{{ name }}">
       <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
         <div *ngIf="f.name.errors.required">{{ nameError }}</div>
       </div>
@@ -14,7 +14,7 @@
 
       <!-- Email -->
       <input type="email" formControlName="email" id="contactFormEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
-        placeholder="E-mail">
+        placeholder="{{ email }}">
       <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
         <div *ngIf="f.name.errors.required">{{ emailError }}</div>
         <div *ngIf="f.name.errors.email">{{ emailFormatError }}</div>
@@ -22,7 +22,7 @@
 
       <!-- Message -->
       <div class="form-group">
-        <textarea formControlName="message" class="form-control rounded" id="contactFormMessage" rows="3" placeholder="Message"></textarea>
+        <textarea formControlName="message" class="form-control rounded" id="contactFormMessage" rows="3" placeholder="{{ message }}"></textarea>
       </div>
       <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
         <div *ngIf="f.message.errors.required">{{ messageError }}</div>

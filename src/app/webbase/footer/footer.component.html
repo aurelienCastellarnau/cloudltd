@@ -1,18 +1,36 @@
-<nav class="navbar mt-5" [ngStyle]="{'background-color': 'rgba(63, 86, 121, 0.5)'}">
-  <div class="navbar-expand l-auto navbar-text">
-    Copyright <i class="fa fa-copyright"></i>  <a href="https://">cloudltd</a>
-  </div>
-  <div class="navbar-expand l-auto navbar-nav">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="https://facebook.com/" target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://twitter.com/" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://instagram.com" target="_blank">
-        <i class="fa fa-instagram"></i>
-      </a>
+<footer class="footer-distributed">
+    <div class="footer-left">
+      <span><img src="{{ logo }}" style="max-height:6rem;"/></span>
+      <p class="footer-links">
+        <a *ngFor="let item of menu" routerLink="{{ item.url }}" href="javascript:function disabler() { return false; }">| {{ item.text }} | </a>
+      </p>
+      <p class="footer-company-name">Copyright <i class="fa fa-copyright"></i> {{ company }}</p>
     </div>
-  </div>
-</nav>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>{{ addr }}</span></p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:{{companymail}}">{{ companymail }}</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>{{ aboutus }}</span>
+        {{ phrase }}
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>

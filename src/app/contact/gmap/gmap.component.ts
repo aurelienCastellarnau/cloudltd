@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gmap.component.css']
 })
 export class GmapComponent implements OnInit {
-  gmap = 'assets/gmap.png';
+  gmap: string;
   constructor() { }
-
   ngOnInit() {
+    this.gmap = 'assets/gmap.png';
   }
-
 }

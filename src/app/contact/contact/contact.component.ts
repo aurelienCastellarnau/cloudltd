@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from 'template/data.json';
+import { Subscription } from 'rxjs';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-contact',

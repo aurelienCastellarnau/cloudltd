@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { TranslationService } from '../../services/translation.service';
 import * as data from 'template/data.json';
 
 @Component({
@@ -6,20 +8,33 @@ import * as data from 'template/data.json';
   templateUrl: './tile.component.html',
   styleUrls: ['./tile.component.css']
 })
-export class TileComponent implements OnInit {
+export class TileComponent implements OnInit, OnDestroy {
   @Input() type: string;
-  tile: any = null;
+  subscription: Subscription;
+  language: string;
+  template: any = (<any>data).english.tile.skills;
   tiles: any;
-  title: any;
-  constructor() { }
-
+  title: string;
+  constructor(private translationService: TranslationService) {
+    this.subscription = this.translationService.getLanguage().subscribe(language => {
+      this.language = language.text;
+      this.defineTemplate();
+    });
+  }
   ngOnInit() {
-    switch (this.type) {
-      case 'savoirfaire':
-        this.tile = (<any>data).english.tile.savoirfaire;
-        break;
+    this.language = this.translationService.getState().actual;
+    this.defineTemplate();
+  }
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+  defineTemplate() {
+    if (this.language === this.translationService.getState().en) {
+      this.template = (<any>data).english.tile.skills;
+    } else if (this.language === this.translationService.getState().ch) {
+      this.template = (<any>data).chinese.tile.skills;
     }
-    this.tiles = this.tile.tiles;
-    this.title = this.tile.title;
+    this.tiles = this.template.tiles;
+    this.title = this.template.title;
   }
 }

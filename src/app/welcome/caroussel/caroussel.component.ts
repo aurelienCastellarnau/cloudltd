@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { TranslationService } from '../../services/translation.service';
 import * as data from 'template/data.json';
@@ -8,25 +8,31 @@ import * as data from 'template/data.json';
   templateUrl: './caroussel.component.html',
   styleUrls: ['./caroussel.component.css']
 })
-export class CarousselComponent implements OnInit {
+export class CarousselComponent implements OnInit, OnDestroy {
   subscription: Subscription;
-  template = (<any>data).english.carousel;
-  imageSource = (<any>data).english.carousel;
+  language: string;
+  template = (<any>data).english;
+  imageSource: string;
 
   constructor(private translationService: TranslationService) {
-    const self = this;
     this.subscription = this.translationService.getLanguage().subscribe(language => {
-      console.log('language: ', language);
-      if (language.text === '中文') {
-        self.template = (<any>data).chinese.carousel;
-      } else if (language.text === 'English') {
-        self.template = (<any>data).english.carousel;
-      }
-      this.imageSource = self.template;
+      this.language = language.text;
+      this.defineTemplate();
     });
-   }
-
-  ngOnInit() {
   }
-
+  ngOnInit() {
+    this.language = this.translationService.getState().actual;
+    this.defineTemplate();
+  }
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+  defineTemplate() {
+    if (this.language === this.translationService.getState().ch) {
+      this.template = (<any>data).chinese;
+    } else if (this.language === this.translationService.getState().en) {
+      this.template = (<any>data).english;
+    }
+    this.imageSource = this.template.banner;
+  }
 }
